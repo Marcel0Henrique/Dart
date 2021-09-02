@@ -53,8 +53,8 @@ main(List<String> args) {
 
   //*OPERADORES LOGICOS
   /*
-  E --> &
-  OU -->  |
+  E --> &&
+  OU -->  ||
   OU EXCLUSIVO --> ^
   SHITF-LEFT --> <<
   SHIFT-RIGHT  --> >>
