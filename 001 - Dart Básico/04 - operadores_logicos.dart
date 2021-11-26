@@ -14,8 +14,8 @@ void main(List<String> args) {
   */
 
   /*
-    AND(E) | &
-    OR(OU) | |
+    AND(E) | &&
+    OR(OU) | ||
   */
 
   print(15 > 10);
@@ -24,4 +24,9 @@ void main(List<String> args) {
   print(35 <= 35);
   print(5 == 5);
   print(75 != 100);
+
+  print("");
+
+  print(10 < 20 && 20 > 10);
+  print(35 > 10 || 20 < 10);
 }
