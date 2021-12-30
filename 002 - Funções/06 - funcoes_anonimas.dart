@@ -1,9 +1,19 @@
 void main(List<String> args) {
-  ninja("Marcelo", clan: "Uchiha");
+  ninja("Marcelo", aldeia: "Kohona", clan: "Uchiha", ele: elemento);
+}
+
+void elemento() {
+  print("Elemento: Fogo");
 }
 
 void ninja(String nome,
-    {int nivel = 0, int chakra = 100, String aldeia = "konoha", String? clan}) {
+    {int nivel = 0,
+    int chakra = 100,
+    required String? aldeia,
+    String? clan,
+
+    //? Função anonima
+    required Function ele}) {
   print("=" * 30);
 
   print("Ninja: ${nome}");
@@ -14,6 +24,8 @@ void ninja(String nome,
   if (clan != null) {
     print("Clan: ${clan}");
   }
+
+  ele();
 
   print("=" * 30);
 }
