@@ -1,6 +1,8 @@
 void main(List<String> args) {
   String? ola = nome(15);
-  print(ola);
+  if (ola != null) {
+    print(ola.toUpperCase());
+  }
 }
 
 String? nome(int n) {
