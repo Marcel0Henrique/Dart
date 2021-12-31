@@ -3,6 +3,11 @@ void main(List<String> args) {
   if (ola != null) {
     print(ola.toUpperCase());
   }
+
+  print("");
+
+  String ola2 = nome(8) ?? "Não informado";
+  print(ola2.toUpperCase());
 }
 
 String? nome(int n) {
