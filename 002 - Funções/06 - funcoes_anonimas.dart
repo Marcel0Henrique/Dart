@@ -1,8 +1,8 @@
 void main(List<String> args) {
-  ninja("Marcelo", aldeia: "Kohona", clan: "Uchiha", ele: elemento("Raio"));
+  ninja("Marcelo", aldeia: "Kohona", clan: "Uchiha", ele: elemento);
 }
 
-void elemento({String elemento = "Fogo"}) {
+void elemento(String elemento) {
   print("Elemento: ${elemento}");
 }
 
@@ -13,7 +13,7 @@ void ninja(String nome,
     String? clan,
 
     //? Função anonima
-    required Function ele}) {
+    required Function(String) ele}) {
   print("=" * 30);
 
   print("Ninja: ${nome}");
@@ -25,7 +25,7 @@ void ninja(String nome,
     print("Clan: ${clan}");
   }
 
-  ele();
+  ele("Raio");
 
   print("=" * 30);
 }
