@@ -1,9 +1,9 @@
 void main(List<String> args) {
-  ninja("Marcelo", aldeia: "Kohona", clan: "Uchiha", ele: elemento);
+  ninja("Marcelo", aldeia: "Kohona", clan: "Uchiha", ele: elemento("Raio"));
 }
 
-void elemento() {
-  print("Elemento: Fogo");
+void elemento({String elemento = "Fogo"}) {
+  print("Elemento: ${elemento}");
 }
 
 void ninja(String nome,
