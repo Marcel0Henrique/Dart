@@ -9,5 +9,17 @@
         "dart": {
             "parser": "markdown"
         }
-    }
+    },
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "motty.db.elephantsql.com",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "Projeto Ferias",
+            "database": "abqvnpeb",
+            "username": "abqvnpeb",
+            "password": "6niniJiISdOgDGcDoaKzDkBIT4vvXE3J"
+        }
+    ]
 }
