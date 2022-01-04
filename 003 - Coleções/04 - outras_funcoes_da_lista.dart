@@ -9,5 +9,11 @@ void main() {
   print('');
   print(doida);
 
-  print(doida.any((element) => false))
+  doida.removeAt(0);
+
+  print(doida.any((i) => i % 20 == 0));
+  print(doida.firstWhere((i) => i % 40 == 0));
+  print(doida.lastWhere((i) => i % 40 == 0));
+  print(doida.where((i) => i % 40 == 0));
+  print(doida.map((i) => i + 1));
 }
