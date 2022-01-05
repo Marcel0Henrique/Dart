@@ -10,12 +10,15 @@ void main(List<String> args) {
   String? clan;
   String? nv_ninja;
 
+  // Aldeias
   List<String> aldeias = ['Folha', 'Areia', 'Nevoa', 'Pedra', 'Nuvem'];
+  // Clans
   List<String> folha = ['Hyūga', 'Uchiha', 'Senju', 'Uzumaki', 'Hatake'];
   List<String> areia = ['Hōki', 'Kazekage', 'Shirogane'];
   List<String> nevoa = ['Hoshigaki', 'Hōzuki', 'Yuki', 'Karatachi'];
   List<String> pedra = ['Kamizuru'];
   List<String> nuvem = ['Yotsuki', 'Chinoike'];
+  //Classificação Ninja
   Map<int, String> ninja = {
     0: 'Genin',
     1: 'Chūnin',
