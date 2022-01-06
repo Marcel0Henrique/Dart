@@ -13,4 +13,8 @@ void funcao(int x) {
   print(x);
 }
 
-class parametroInvalido implements Exception {}
+class parametroInvalido implements Exception {
+  String toString() {
+    return "Você não pode passar um valor menor ou igual a zero";
+  }
+}
