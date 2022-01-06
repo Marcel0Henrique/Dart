@@ -1,1 +1,34 @@
 void main(List<String> args) {}
+
+//* Simulando o retorno de uma API
+String dadosUsuario() {
+  return """
+  {
+    "nome": "Marcelo",
+    "sobrenome": "Henrique",
+    "idade": 44,
+    "casado": false,
+    "altura": 1.7,
+    "cursos": [
+      {
+        "curso": "dart",
+        "dificuldade": 1
+      },
+      {
+        "curso": "flutter",
+        "dificuldade": 1
+      },
+      {
+        "curso": "python",
+        "dificuldade": 1
+      }
+    ],
+    "endereco": {
+      "estado": "pernambuco",
+      "cidade": "camaragibe",
+      "bairro": "ceu azul",
+      "rua": "Rua timbu"
+    }
+  }
+  """;
+}
