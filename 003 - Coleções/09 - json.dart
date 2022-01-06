@@ -1,7 +1,18 @@
-void main(List<String> args) {}
+import 'dart:convert';
+
+import '../002 - Funções/08 - escopo.dart';
+
+void main(List<String> args) {
+  //* Convertendo retorno em strig para json e armazenando em um Map
+  Map<String, dynamic> dados = jsonDecode(dadosDoUsuario());
+
+  print(dados['nome']);
+  print(dados['endereco']['cidade']);
+  print(dados['cursos'][0]['curso']);
+}
 
 //* Simulando o retorno de uma API
-String dadosUsuario() {
+String dadosDoUsuario() {
   return """
   {
     "nome": "Marcelo",
