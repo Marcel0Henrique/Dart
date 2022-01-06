@@ -4,5 +4,7 @@ void main(List<String> args) {
     print(resultado);
   } catch (e) {
     print(e);
+    print(e.runtimeType);
   }
+  print('Final');
 }
