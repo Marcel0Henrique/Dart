@@ -12,11 +12,13 @@ void main(List<String> args) {
     //? se o erro for IntegerDivisionByZeroException executa o comando abaixo
     print("Inteiro dividido por zero");
   } on FormatException catch (e) {
-    print('Numero incorreto: ${e}');
+    print('Numero incorreto: ${e.message}');
   } catch (e) {
     //? se for outro erro executa esse comando abaixo
     print(e); //* Mostra o erro
     print(e.runtimeType); //* Mostra o tipo do erro
+  } finally {
+    //* Executa independente de ter apresentado error ou não
+    print('Final');
   }
-  print('Final');
 }
