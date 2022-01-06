@@ -4,13 +4,15 @@ void main(List<String> args) {
     int resultado = 100 ~/ 2;
     print(resultado);
 
-    double valor = double.parse('50.7');
+    double valor = double.parse('50.7a'); // Erro FormatException
 
     print('');
     print(valor);
   } on IntegerDivisionByZeroException {
     //? se o erro for IntegerDivisionByZeroException executa o comando abaixo
     print("Inteiro dividido por zero");
+  } on FormatException catch (e) {
+    print('Numero incorreto: ${e}');
   } catch (e) {
     //? se for outro erro executa esse comando abaixo
     print(e); //* Mostra o erro
