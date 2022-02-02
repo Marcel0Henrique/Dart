@@ -1,3 +1,8 @@
+enum statusPagamento { pendente, pago, reembolsado }
+
 void main(List<String> args) {
-  int statusPagamento = 1;
+  statusPagamento status = statusPagamento.reembolsado;
+  print(status);
+  print(status.index);
+  print(statusPagamento.values[2]);
 }
