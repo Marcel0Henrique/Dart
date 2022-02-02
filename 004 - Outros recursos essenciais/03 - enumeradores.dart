@@ -1,1 +1,3 @@
-void main(List<String> args) {}
+void main(List<String> args) {
+  int statusPagamento = 1;
+}

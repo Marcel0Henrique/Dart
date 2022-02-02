@@ -1,6 +1,5 @@
 import 'dart:convert';
 
-import '../002 - Funções/08 - escopo.dart';
 
 void main(List<String> args) {
   //* Convertendo retorno em strig para json e armazenando em um Map
