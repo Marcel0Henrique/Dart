@@ -1,7 +1,7 @@
 class Bola {
   //*Atributos
   String? _cor;
-  String? _circunferencia;
+  double? _circunferencia;
   String? _material;
 
   //*Getters
