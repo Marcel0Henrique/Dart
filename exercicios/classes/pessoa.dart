@@ -1,6 +1,10 @@
 class Pessoa {
   //*Construtor
-  Pessoa({required nome});
+  Pessoa({required nome, required idade, required peso, required altura})
+      : this._nome = nome,
+        _idade = idade,
+        _peso = peso,
+        _altura = altura;
 
   //*Atributos
   String? _nome;
@@ -19,4 +23,7 @@ class Pessoa {
   set idade(value) => this._idade = value;
   set peso(value) => this._peso = value;
   set altura(value) => this._altura = value;
+
+  //*Metodos
+
 }
