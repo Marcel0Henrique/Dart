@@ -1,7 +1,7 @@
 class Pessoa {
   //*Construtor
   Pessoa({required nome, required idade, required peso, required altura})
-      : this._nome = nome,
+      : _nome = nome,
         _idade = idade,
         _peso = peso,
         _altura = altura;
@@ -27,6 +27,12 @@ class Pessoa {
   //*Metodos
   void envelhecer() {
     if (idade < 21) {
-    } else {}
+      idade++;
+      altura += 0.5;
+    } else {
+      idade++;
+    }
   }
+
+  void 
 }
