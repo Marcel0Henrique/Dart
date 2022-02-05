@@ -25,5 +25,8 @@ class Pessoa {
   set altura(value) => this._altura = value;
 
   //*Metodos
-
+  void envelhecer() {
+    if (idade < 21) {
+    } else {}
+  }
 }
