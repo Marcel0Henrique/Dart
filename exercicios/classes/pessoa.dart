@@ -25,14 +25,18 @@ class Pessoa {
   set altura(value) => this._altura = value;
 
   //*Metodos
-  void envelhecer() {
-    if (idade < 21) {
-      idade++;
-      altura += 0.5;
-    } else {
-      idade++;
+  void envelhecer(int anos) {
+    for (var i = 0; i <= anos; i++) {
+      if (idade < 21) {
+        idade++;
+        altura += 0.5;
+      } else {
+        idade++;
+      }
     }
   }
 
-  void 
+  void engordar(int peso) {
+    this.peso += peso;
+  }
 }
