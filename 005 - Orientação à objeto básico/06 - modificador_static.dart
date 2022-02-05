@@ -1,4 +1,7 @@
-void main(List<String> args) {}
+void main(List<String> args) {
+  print(Gente.atributoStatic);
+  Gente.andar();
+}
 
 class Gente {
   //*Construtor
@@ -7,4 +10,17 @@ class Gente {
   //*Atributos
   String nome;
   int idade;
+
+  //*Atributo static
+  static String atributoStatic = 'abc';
+
+  //*Metodos
+  void comer() {
+    print("Comendo...");
+  }
+
+  //*Metodo Static
+  static void andar() {
+    print('Andando...');
+  }
 }
