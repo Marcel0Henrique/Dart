@@ -1,4 +1,7 @@
 class Pessoa {
+  //*Construtor
+  Pessoa({required nome});
+
   //*Atributos
   String? _nome;
   int? _idade;
