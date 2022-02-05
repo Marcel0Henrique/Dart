@@ -26,7 +26,7 @@ class Pessoa {
 
   //*Metodos
   void envelhecer(int anos) {
-    for (var i = 0; i <= anos; i++) {
+    for (var i = 1; i <= anos; i++) {
       if (idade < 21) {
         idade++;
         altura += 0.5;
@@ -36,7 +36,9 @@ class Pessoa {
     }
   }
 
-  void engordar(int peso) {
-    this.peso += peso;
-  }
+  void engordar(value) => this.peso += value;
+
+  void emagrecer(value) => this.peso -= value;
+
+  void crescer(value) => this.idade += value;
 }
