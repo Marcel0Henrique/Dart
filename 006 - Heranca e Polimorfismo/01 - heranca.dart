@@ -9,7 +9,7 @@ class Animal {
 
   //*Getters
   get nome => this._nome;
-  get especie => this.especie;
+  get especie => this._especie;
   get idade => this._idade;
 
   //*Setters
