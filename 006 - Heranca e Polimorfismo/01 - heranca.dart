@@ -4,6 +4,8 @@ void main(List<String> args) {
   dog.especie = 'Pitbull';
   dog.idade = 5;
   dog.latir();
+  dog.dormi();
+  dog.comer();
 }
 
 class Animal {
