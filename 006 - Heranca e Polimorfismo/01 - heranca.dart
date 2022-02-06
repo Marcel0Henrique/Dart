@@ -1,6 +1,10 @@
-import 'dart:_internal';
-
-void main(List<String> args) {}
+void main(List<String> args) {
+  Cachorro dog = Cachorro();
+  dog.nome = 'Rex';
+  dog.especie = 'Pitbull';
+  dog.idade = 5;
+  dog.latir();
+}
 
 class Animal {
   String? _nome;
@@ -22,6 +26,7 @@ class Animal {
   dormi() => print('Dormiu');
 }
 
+//* classe Cachorro herdando de Animal
 class Cachorro extends Animal {
   latir() => print('Au Au');
 }
