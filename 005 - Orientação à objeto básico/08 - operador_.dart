@@ -1,7 +1,7 @@
 void main(List<String> args) {
   //*Objeto pode ser nulo
-  Animal? cao;
-  print(cao?.nome);
+  Animal? cao = Animal(nome: 'dog');
+  print(cao.nome);
 }
 
 class Animal {
