@@ -22,4 +22,6 @@ class Animal {
   dormi() => print('Dormiu');
 }
 
-class Cachorro {}
+class Cachorro extends Animal {
+  latir() => print('Au Au');
+}
