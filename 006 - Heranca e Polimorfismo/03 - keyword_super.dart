@@ -1,8 +1,5 @@
 void main(List<String> args) {
-  Cachorro dog = Cachorro();
-  dog.nome = 'Rex';
-  dog.especie = 'Pitbull';
-  dog.idade = 5;
+  Cachorro dog = Cachorro('Rex', 'Pitbull', 5);
 
   //*Chamando o toString
   print(dog);
@@ -13,6 +10,8 @@ void main(List<String> args) {
 }
 
 class Animal {
+  Animal(this._nome, this._especie, this._idade);
+
   String? _nome;
   String? _especie;
   int? _idade;
@@ -39,6 +38,10 @@ class Animal {
 
 //* classe Cachorro herdando de Animal
 class Cachorro extends Animal {
+  //? construtor da herança deve usar o super
+  Cachorro(String nome, String especie, int idade)
+      : super(nome, especie, idade);
+
   latir() => print('Au Au');
 
   //*Reescrevendo metodo dormi
