@@ -3,10 +3,13 @@ void main(List<String> args) {
   dog.nome = 'Rex';
   dog.especie = 'Pitbull';
   dog.idade = 5;
-  dog.dormi();
 
   //*Chamando o toString
   print(dog);
+
+  print('');
+
+  dog.dormi();
 }
 
 class Animal {
