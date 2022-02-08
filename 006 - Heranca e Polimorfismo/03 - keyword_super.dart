@@ -43,5 +43,9 @@ class Cachorro extends Animal {
 
   //*Reescrevendo metodo dormi
   @override
-  dormi() => print('Dormiu roncando...');
+  void dormi() {
+    super.dormi(); //? super chama o metodo da super classe,
+    //? no caso a classe que foi herdada para Cachorro que no caso é Animal
+    print('Dormiu roncando...');
+  }
 }
