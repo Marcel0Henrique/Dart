@@ -9,7 +9,7 @@ void main(List<String> args) {
   dog.dormi();
 }
 
-//*Usando o abstract vc não pode usar a classe Animal apena as classes que herdam ele
+//*Usando o abstract vc não pode instancia a classe Animal apena as classes que herdam ele, exemplo Cachorro
 abstract class Animal {
   Animal(this._nome, this._especie, this._idade);
 
