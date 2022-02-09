@@ -58,3 +58,17 @@ class Cachorro extends Animal {
     print('Muito triste');
   }
 }
+
+class Gato extends Animal {
+  //*Construtor
+  Gato(String? nome, String? especie, int? idade) : super(nome, especie, idade);
+
+  //*Atributo
+  int vidas = 7;
+
+  @override
+  void morrer() {
+    vidas--;
+    print("Super triste, sobrou $vidas vidas");
+  }
+}
