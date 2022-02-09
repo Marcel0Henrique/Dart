@@ -31,6 +31,8 @@ abstract class Animal {
 
   dormi() => print('Dormiu');
 
+  void morrer();
+
   @override
   String toString() {
     return 'Nome: $nome \nEspecie: $especie \nIdade: $nome';
@@ -49,5 +51,10 @@ class Cachorro extends Animal {
   void dormi() {
     super.dormi();
     print('Dormiu roncando...');
+  }
+
+  @override
+  void morrer() {
+    print('Muito triste');
   }
 }
