@@ -9,7 +9,8 @@ void main(List<String> args) {
   dog.dormi();
 }
 
-class Animal {
+//*Usando o abstract vc não pode usar a classe Animal apena as classes que herdam ele
+abstract class Animal {
   Animal(this._nome, this._especie, this._idade);
 
   String? _nome;
@@ -38,7 +39,6 @@ class Animal {
 
 //* classe Cachorro herdando de Animal
 class Cachorro extends Animal {
-  //? construtor da herança deve usar o super
   Cachorro(String nome, String especie, int idade)
       : super(nome, especie, idade);
 
@@ -47,8 +47,7 @@ class Cachorro extends Animal {
   //*Reescrevendo metodo dormi
   @override
   void dormi() {
-    super.dormi(); //? super chama o metodo da super classe,
-    //? no caso a classe que foi herdada para Cachorro que no caso é Animal
+    super.dormi();
     print('Dormiu roncando...');
   }
 }
