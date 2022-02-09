@@ -1,14 +1,19 @@
 void main(List<String> args) {
-  RepositorioPessoasRemote repo = RepositorioPessoasRemote();
+  RepositorioPessoas repo = RepositorioPessoasRemote();
+  repo.adicionar('Maria');
+  repo.ler(10);
 }
 
 //* interfaces
+//? usando o interfaces vc segue uma especie de contrato, o que vc declarar na Super Classe vc teria que seguir
+//? nas outras classes, assim evita erros
 abstract class RepositorioPessoas {
   String ler(int id);
   void adicionar(String nome);
   void apagar(int id);
 }
 
+//? se usa o implements para indicar que está usando como interface a Super Classe RepositorioPessoas
 class RepositorioPessoasRemote implements RepositorioPessoas {
   @override
   void adicionar(String nome) {
